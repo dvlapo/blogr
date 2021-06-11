@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>[Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-ubuntu">
+  <main class="overflow-hidden">
+    <section class="bg-light_red bg-hero-background bg-auto bg-no-repeat bg-center rounded-bl-9xl text-white pb-24">
+      <header class="w-3/4  pt-10 mx-auto flex items-end text-base font-black justify-between">
+        <div class="flex">
+          <div class="sm:inline-block">
+            <img src="/images/logo.svg" alt="Blogr" class="h-9 sm:h-14">
+          </div>
+          <div class="ml-36  sm:hidden">
+            <button class="text-white"><i class="menu-icon dropbtn material-icons " style="font-size:34px">menu</i></button>
+          </div>
+           <div class="hidden dropdown-content trasition duration-400 ease-in absolute top-24 left-8 shadow-2xl text-very_dark_grayish_blue text-xl font-semibold sm:hidden py-8 flex-col bg-white w-5/6 mx-auto rounded-2xl">
+             <button class="mb-4 text-2xl font-bold explore_btn"><a href="#">Product <i class="product-icon material-icons text-very_light_red">expand_more</i></a></button>
+             <ul class="hidden text-center explore bg-grayish_blue bg-opacity-10 rounded-xl w-4/5 mx-auto py-4 sm:hidden">
+              <li class="py-3 text-base"><a href="#">Overview</a></li>
+              <li class="py-3 text-base"><a href="#">Pricing</a></li>
+              <li class="py-3 text-base"><a href="#">Marketplace</a></li>
+              <li class="py-3 text-base"><a href="#">Features</a></li> 
+              <li class="py-3 text-base"><a href="#">Integrations</a></li>   
+            </ul>
+             <button class="explorecoy_btn mb-4 text-2xl font-bold "><a href="#">Company<i class="company-icon material-icons text-very_light_red">expand_more</i></a></button>
+             <ul class="explorecoy hidden text-center  bg-grayish_blue bg-opacity-10 rounded-xl w-4/5 mx-auto py-4 sm:hidden">
+              <li class="py-3 text-base"><a href="#">About</a></li>
+              <li class="py-3 text-base"><a href="#">Team</a></li>
+              <li class="py-3 text-base"><a href="#">Blog</a></li>
+              <li class="py-3 text-base"><a href="#">Careers</a></li>
+            </ul>
+             <button class="mb-4 text-2xl font-bold exploreconnect_btn"><a href="#">Connect<i class="connect-icon material-icons text-very_light_red">expand_more</i></a></button>
+             <ul class="hidden text-center exploreconnect bg-grayish_blue bg-opacity-10 rounded-xl w-4/5 mx-auto py-4 sm:hidden">
+               <li class="py-3 text-base"><a href="#">Contact</a></li>
+               <li class="py-3 text-base"><a href="#">Newsletter</a></li>
+               <li class="py-3 text-base"><a href="#">LinkedIn</a></li>
+             </ul>
+            <hr class="mx-auto my-2 h w-4/5 opacity-30">
+            <button class="my-4 font-bold text-xl ">Login</button>
+            <button class="pb-4 font-bold text-xl bg-gradient-to-r from-very_light_red to-light_red text-white rounded-full w-44 h-16 py-2 self-center mx-auto">Sign Up</button>
+           </div>
+           
+<!-- DROPDOWNS FOR DESKTOP -->
+            <div class="hidden sm:flex group  sm:float-right sm:ml-16 sm:mt-6">
+              <!-- PRODUCT DROPDOWN -->
+              <div class=" inline-block relative mb-2 mr-6 ">
+                <button class=" font-black drop focus:outline-none">
+                  <span>Product</span>
+                  <span class="ml-1"><i class="fa fa-angle-down"></i></span>
+                </button>
+                <ul class="down z-40 hidden border-none bg-opacity-95 absolute mt-4 w-40 text-very_dark_grayish_blue bg-white border rounded p-6 shadow-xl">
+                  <li class="mb-2"><a href="#" class="hover:text-very_dark_blue text-sm">Overview</a></li>
+                  <li class="mb-2"><a href="#" class="hover:text-very_dark_blue text-sm">Pricing</a></li>
+                  <li class="mb-2"><a href="#" class="hover:text-very_dark_blue text-sm">Marketplace</a></li>
+                  <li class="mb-2"><a href="#" class="hover:text-very_dark_blue text-sm">Features</a></li>
+                  <li><a href="#" class="hover:text-very_dark_blue text-sm">Integrations</a></li>
+                </ul>
+              </div>
+
+              <!-- COMPANY DROPDOWN -->
+              <div class="inline-block relative mb-2 mr-6">
+                <button class="text-white font-black droptwo focus:outline-none">
+                  <span>Company</span>
+                  <span class="ml-1"><i class="fa fa-angle-down"></i></span>
+                </button>
+                <ul class="downtwo z-40 hidden border-none bg-opacity-95 absolute mt-4 w-40 text-very_dark_grayish_blue bg-white border rounded p-6 shadow-xl">
+                  <li class="mb-2"><a href="#" class="hover:text-very_dark_blue text-sm">About</a></li>
+                  <li class="mb-2"><a href="#" class="hover:text-very_dark_blue text-sm">Team</a></li>
+                  <li class="mb-2"><a href="#" class="hover:text-very_dark_blue text-sm">Blog</a></li>
+                  <li><a href="#" class="hover:text-very_dark_blue text-sm"></a>Careers</li>
+                </ul>
+              </div>
+
+              <!-- CONNECT DROPDOWN -->
+              <div class="inline-block relative mb-2 mr-6">
+                <button class="text-white font-black dropthree focus:outline-none">
+                  <span>Connect</span>
+                  <span class="ml-1"><i class="fa fa-angle-down"></i></span>
+                </button>
+                <ul
+                  class="downthree z-40 hidden border-none bg-opacity-95 absolute mt-4 w-40 text-very_dark_grayish_blue bg-white border rounded p-6 shadow-xl">
+                  <li class="mb-2"><a href="#" class="hover:text-very_dark_blue text-sm">Contact</a></li>
+                  <li class="mb-2"><a href="#" class="hover:text-very_dark_blue text-sm">Newsletter</a></li>
+                  <li><a href="#" class="hover:text-very_dark_blue text-sm">LinkedIn</a></li>
+                </ul>
+              </div>
+            </div>
+
+</div>        
+        <!-- LOGIN AND SIGNUP -->
+
+        <div class="hidden sm:inline-flex sm:text-white sm:items-center sm:justify-self-end sm:mb-3" >
+          <ul class="flex">
+            <li class="mr-4 group group-hover:bg-gray-500 rounded-lg"><a href="#">Login</a></li>
+          </ul>
+          <ul class="bg-white hover:bg-very_light_red hover:text-white rounded-3xl text-light_red py-2 px-7">
+            <li"><a href="#">Sign Up</a></li>
+          </ul>
+            
+        </div>
+      </header>
+
+      <div class="text-white mt-24 mx-auto w-4/5 text-center">
+          <h1 class="text-5xl">A modern publishing platform</h1>
+          <p class="mt-8 mb-10 text-grayish_blue text-base">Grow your audience and build your online brand</p>
+          <button class="bg-white font-bold text-light_red hover:bg-very_light_red hover:text-grayish_blue px-5 py-2 mr-3 rounded-4xl"><a href="#">Start for Free</a></button>
+          <button class="border font-bold border-white rounded-4xl hover:bg-white hover:text-light_red px-5 py-2"><a href="#">Learn More</a></button>
+      </div>
+    </section>
+
+
+    <!-- DESIGNED FOR THE FUTURE SECTION -->
+    <section class="w-full sm:w-10/12 mx-auto my-36" >
+      <h2 class="my-20 mx-auto w-5/6 font-black text-center text-3xl">Designed for the future</h2>
+
+      <div class="sm:-right-48 sm:-top-28 sm:relative h-full sm:flex-grow">
+        <img src="/images/illustration-editor-mobile.svg" alt="Editor" class="w-max sm:hidden">
+      </div>
+
+      <div class="sm:text-left text-center  mx-auto sm:flex mt-14">
+        <div class="w-5/6 mx-auto">
+          <article class="mb-7">
+            <h3 class="font-extrabold text-2xl mb-3">Introducing an extensible editor</h3>
+                <p class="text-md">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                     videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                     change the looks of a blog.
+                </p>
+          </article>
+          <article>
+            <h3 class="font-extrabold text-2xl mt-14 sm:mt10 mb-3">Robust content management</h3>
+            <p class="text-md">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+          </article>
+        </div>
+        <div class="hidden sm:inline-block sm:h-full sm:w-full sm:flex-grow sm:relative sm:bottom-40 sm:left-48">
+          <img src="/images/illustration-editor-desktop.svg" alt="Editor">
+        </div>
+      </div>
+    </section>
+
+    <!-- STATE OF ART SECTION -->
+    <section class="my-20 relative top-20 sm:h-3/5">
+      <div class="sm:flex sm:h-96 bg-very_dark_blue items-center rounded-tr-9xl rounded-bl-9xl">
+        <div class="w-full sm:ml-20 relative bottom-36 sm:flex sm:bottom-0  sm:bg-contain bg-no-repeat bg-center">
+          <img src="/images/illustration-phones.svg" alt="Phones" class="z-40">
+
+          <article class="w-5/6 sm:text-left relative sm:static text-center sm:my-auto sm:ml-8 sm:items-center mx-auto sm:mr-20">
+            <img src="/images/bg-pattern-circles.svg" alt="o" class="absolute -z-10 bottom-64  sm:hidden">
+            
+            <h3 class="text-white font-bold text-4xl sm:text-2xl mb-4 sm:mb-6 ">State of the Art Infrastructure</h3>
+            <p class="text-grayish_blue text-lg sm:text-base">With reliability and speed in mind, worldwide data centers
+              provide the backbone for ultra-fast connectivity.
+              This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+          </article>
+        </div>
+
+     
+      </div>
+      
+    </section>
+
+    <!-- LAPTOP SECTION -->
+    <section class="text-center sm:w-5/6 w-5/6 sm:text-left sm:items-center sm:mt-96 sm:flex mt-64 mb-36 mx-auto">
+      <div class="w-full h-full sm:h-96 sm:flex-grow">
+        <img src="/images/illustration-laptop-mobile.svg" alt="Laptop" class="w-full sm:hidden">
+        <img src="/images/illustration-laptop-desktop.svg" alt="Laptop" class="hidden sm:-left-36 sm:-top-28  sm:self-stretch sm:block sm:relative sm:w-full">
+      </div>
+      <div class="w-11/12 mx-auto mt-10 sm:mt-0 sm:my-auto">
+        <article class="mb-7">
+          <h3 class="font-semibold mb-3 text-2xl">Free, open, simple</h3>
+          <p class="text-base">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+        </article>
+
+        <article class="mt-5 mb-7">
+          <h3 class="font-semibold mb-3 text-2xl">Powerful tooling</h3>
+          <p class="text-base">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+              capable of producing even the most complicated sites.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="bg-very_dark_blue sm:h-72 text-grayish_blue self-center rounded-tr-9xl">
+    <div class="sm:flex text-center w-4/5 mx-auto justify-around py-10">
+      <div class="mb-12">
+        <img src="/images/logo.svg" alt="Blogr" class="mx-auto">
+      </div>
+      
+      <div class="mb-10">
+        <h3 class="mb-5  font-bold">Product</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">Overview</a></li>
+          <li><a href="#" class="hover:underline">Pricing</a></li>
+          <li><a href="#" class="hover:underline">Marketplace</a></li>
+          <li><a href="#" class="hover:underline">Features</a></li>
+          <li><a href="#" class="hover:underline">Integrations</a></li>
+        </ul>
+      </div>
+  
+      <div class="mb-10">
+        <h3 class="mb-5 font-bold">Company</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Team</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Careers</a></li>
+        </ul>
+      </div>
+  
+      <div class="mb-10">
+        <h3 class="mb-5 font-bold">Connect</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="#" class="hover:underline">Newsletter</a></li>
+          <li><a href="#" class="hover:underline">LinkedIn</a</li>
+        </ul>
+      </div>
+    </div>
+    
+  </footer>
+
+
+  
+  
+  
+  
+  
+ 
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+ 
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/dvlapo">dvlapo</a>.
+  </div>
+
+  <script src="/public/app.js"></script>
+</body>
+
+</html>
